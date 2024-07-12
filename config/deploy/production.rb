@@ -54,8 +54,8 @@ server "13.230.226.100",
   roles: %w{web db app},
   ssh_options: {
     user: "app", # overrides user setting above
-    keys: %w("/home/yuko/.ssh/webserver.pem"),
+    #keys: %w("/home/yuko/.ssh/webserver.pem"),
     forward_agent: false,
-    auth_methods: %w(publickey password)
+    #auth_methods: %w(publickey)
     # password: "please use keys"
   }
